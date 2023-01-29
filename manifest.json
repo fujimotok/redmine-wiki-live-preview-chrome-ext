@@ -1,0 +1,19 @@
+{
+  "name": "Redmine wiki live preview",
+  "description": "Redmine wiki live preview",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "http://<yourhost>/projects/*/wiki/*/edit"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ]
+    }
+  ]
+}
